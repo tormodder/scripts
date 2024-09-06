@@ -22,7 +22,7 @@ def largest_network(file):
 
     largest_network = min(networks, key=lambda net: net.prefixlen)
 
-    return largest_network
+    print(f"largest network: {largest_network}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Find the largest network range from an arbitrary list of ipv6 addresses in CIDR notation")
